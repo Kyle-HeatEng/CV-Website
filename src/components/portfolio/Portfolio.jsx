@@ -1,18 +1,11 @@
 import React from "react";
 import "./portfolio.css";
-import MyArtYourArt from "../../projectArt/My-Art-Your-Art.svg";
 
-import Kanboard from "../../projectArt/Kanboard.svg";
-import art__generator from "../../projectArt/art__generator.svg";
-import TicTacToe from "../../projectArt/Tic-Tac-Toe.svg";
-import EtchASketch from "../../projectArt/EtchaASketch.svg";
-import wordleClone from "../../projectArt/wordle-Clone.svg";
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 import {
   leftAnimate,
   rightAnimate,
-  upAnimate,
-  opAnimation,
+  upAnimate
 } from "../../animations";
 export const Portfolio = () => {
   return (
@@ -26,134 +19,89 @@ export const Portfolio = () => {
       <motion.h2 variants={rightAnimate}>Portfolio</motion.h2>
       <div className="container portfolio__container">
         <motion.article variants={upAnimate} className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={MyArtYourArt} alt="" />
+          <div className="p-1 text-lg font-bold underline text-primary">
+            AI-TICULATE
           </div>
-          <h3>My Art Your Art</h3>
+          <div className="p-2">
+            This project was to assist a self taught developer I have mentoring
+            getting into the software industry.
+          </div>
+          <p className="p-2">
+            The project came to me as a local running react app which I helped
+            convert into a full stack application.
+          </p>
+          <p className="p-2">
+            Using AWS cdk to deploy a EC2 instance configured with a nginx web
+            server that reverse proxies to a containerized express application
+            server which uses OpenAI GPT-3.5 model via the OpenAI API to
+            generate trivia questions and answers. The web server accessible via
+            a Cloudflare DNS and has certificate manager for HTTPS. There are
+            future plans to implement a CI/CD pipeline with GitHub Actions.
+          </p>
           <div className="portfolio__item-cta">
             <a
-              href="https://github.com/aya6266/My-Art-Your-Art"
+              href="https://github.com/ai-ticulate/ai-ticulate"
               className="btn"
               target="_blank"
             >
               Github
-            </a>
-            <a
-              href="https://aya6266.github.io/My-Art-Your-Art/"
-              className="btn btn-primary"
-              target="_blank"
-            >
-              Live Demo
             </a>
           </div>
         </motion.article>
         <motion.article variants={upAnimate} className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={wordleClone} alt="" />
+          <div className="p-1 text-lg font-bold underline text-primary">
+            Seurat Project
           </div>
-          <h3>Wordle Clone</h3>
+          <p className="p-2">
+            This project initially was designed to expand my knowledge on AWS
+            serverless architecture. I initially created a diagram of the
+            infrastructure required to produces a social network for artists. In
+            order to achieve a real time chat feature both HTTP API Gateway and
+            Websocket API Gateway were used to trigger AWS Lambda functions
+            which interacted with a DynamoDB table via a SQS queue. This
+            serverless application would be authenticate via a cognito user pool
+            and accessible to public web via DNS via a Route 53 hosted zone.
+          </p>
+          <p className="p-2">
+            For local development In the first sprint I configured a NestJS
+            WebSocket using Socket.IO dependency
+          </p>
           <div className="portfolio__item-cta">
             <a
-              href="https://github.com/aya6266/wordle__clone"
+              href="https://github.com/Kyle-HeatEng/seurat_project/tree/1-sprint-1-websocket-api-aws-lambda-dynamodb"
               className="btn"
               target="_blank"
             >
               Github
-            </a>
-            <a
-              href="https://wordle-clone-9e05c.web.app//"
-              className="btn btn-primary"
-              target="_blank"
-            >
-              Live Demo
             </a>
           </div>
         </motion.article>
         <motion.article variants={upAnimate} className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={Kanboard} alt="" />
+          <div className="p-1 text-lg font-bold underline text-primary">
+            Snake Unity
           </div>
-          <h3>Kanboard</h3>
+          <p className="p-2">
+            A modern take on the classic Snake game, developed with Unity. This
+            project aims to explore more in-depth aspects of Unity, utilize C#
+            events for gameplay mechanics, and incorporate 3D modeling to bring
+            a fresh perspective to the iconic game.
+          </p>
+          <p className="p-2">
+            Main purpose of this application was to expand my existing knowledge
+            of Unity and C#. With a focus on Dotnet's action api to decouple
+            game logic from the game view.
+          </p>
+          <p className="p-2">
+            The game features a 3D snake that grows in size as it consumes
+            objects in the game world. 
+          </p>
           <div className="portfolio__item-cta">
             <a
-              href="https://github.com/aya6266/Kanboard"
+              href="https://github.com/Kyle-HeatEng/snake-unity"
               className="btn"
               target="_blank"
             >
               Github
-            </a>
-            <a
-              href="https://aya6266.github.io/Kanboard/"
-              className="btn btn-primary"
-              target="_blank"
-            >
-              Live Demo
-            </a>
-          </div>
-        </motion.article>
-        <motion.article variants={upAnimate} className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={art__generator} alt="" />
-          </div>
-          <h3>Art Generator</h3>
-          <div className="portfolio__item-cta">
-            <a
-              href="https://github.com/aya6266/art__generator"
-              className="btn"
-              target="_blank"
-            >
-              Github
-            </a>
-            <a
-              href="https://aya6266.github.io/art__generator/"
-              className="btn btn-primary"
-              target="_blank"
-            >
-              Live Demo
-            </a>
-          </div>
-        </motion.article>
-        <motion.article variants={upAnimate} className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={TicTacToe} alt="" />
-          </div>
-          <h3>Tic Tac Toe</h3>
-          <div className="portfolio__item-cta">
-            <a
-              href="https://github.com/aya6266/Tic-Tac-Toe"
-              className="btn"
-              target="_blank"
-            >
-              Github
-            </a>
-            <a
-              href="https://aya6266.github.io/Tic-Tac-Toe/"
-              className="btn btn-primary"
-              target="_blank"
-            >
-              Live Demo
-            </a>
-          </div>
-        </motion.article>
-        <motion.article variants={upAnimate} className="portfolio__item">
-          <div className="portfolio__item-image">
-            <img src={EtchASketch} alt="" />
-          </div>
-          <h3>Etch A Sketch</h3>
-          <div className="portfolio__item-cta">
-            <a
-              href="https://github.com/aya6266/Etch-A-Sketch"
-              className="btn"
-              target="_blank"
-            >
-              Github
-            </a>
-            <a
-              href="https://aya6266.github.io/Etch-A-Sketch/"
-              className="btn btn-primary"
-              target="_blank"
-            >
-              Live Demo
             </a>
           </div>
         </motion.article>

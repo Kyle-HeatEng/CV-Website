@@ -2,8 +2,6 @@ import React from "react";
 import "./about.css";
 
 import { motion } from "framer-motion";
-import { BsFillBriefcaseFill, BsFolderCheck } from "react-icons/bs";
-import { FiAward } from "react-icons/fi";
 import { leftAnimate, rightAnimate, upAnimate } from "../../animations";
 import Video from "./Video";
 
@@ -29,18 +27,15 @@ export const About = () => {
             transition={{ staggerChildren: 0.5 }}
             className="about__cards"
           >
-            <article className="about__card">
-              <BsFillBriefcaseFill className="about__icon" />
+            <article className="about__card flex flex-col justify-center">
               <h5>Experience</h5>
               <small>2 years of Full Stack Software Engineer</small>
             </article>
             <article className="about__card">
-              <FiAward className="about__icon" />
               <h5>Education</h5>
               <small>2:1 Chemistry Bsc</small>
             </article>
             <article className="about__card">
-              <BsFolderCheck className="about__icon" />
               <h5>Projects</h5>
               <small>Present in Portfolio</small>
             </article>

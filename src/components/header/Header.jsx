@@ -1,15 +1,15 @@
+import { motion } from "framer-motion";
 import React from "react";
-import "./header.css";
-import CTA from "./CTA";
-import HeaderSocials from "./HeaderSocials";
-import FaceMorph from "./FaceMorph";
-import { motion, Variants } from "framer-motion";
 import {
   leftAnimate,
+  opAnimation,
   rightAnimate,
   upAnimate,
-  opAnimation,
 } from "../../animations";
+import CTA from "./CTA";
+import FaceMorph from "./FaceMorph";
+import HeaderSocials from "./HeaderSocials";
+import "./header.css";
 
 export const Header = () => {
   return (
@@ -24,10 +24,10 @@ export const Header = () => {
         <motion.h5 variants={leftAnimate}>Hello I'm</motion.h5>
         <motion.h1 variants={rightAnimate}>Kyle Albert</motion.h1>
         <motion.h5 variants={leftAnimate} className="text-light">
-          Frontend Developer
+          Full Stack Software Engineer
         </motion.h5>
         <motion.h5 variants={rightAnimate} className="text-light">
-          Artist
+          Software solution designer and creative
         </motion.h5>
         <motion.div variants={leftAnimate}>
           <CTA />
