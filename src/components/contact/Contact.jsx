@@ -1,36 +1,26 @@
-import React, { useRef } from "react";
-import "./contact.css";
-import { MdOutlineMail } from "react-icons/md";
-import { BsWhatsapp } from "react-icons/bs";
 import emailjs from "@emailjs/browser";
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
+import React, { useRef } from "react";
 import {
   leftAnimate,
   rightAnimate,
-  upAnimate,
-  opAnimation,
+  upAnimate
 } from "../../animations";
+import "./contact.css";
 export const Contact = () => {
   const form = useRef();
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     e.preventDefault();
 
-    emailjs
+    await emailjs
       .sendForm(
         "service_b1wj3gj",
         "template_b2npkpt",
         form.current,
         "XtvcfCWfHOXEX9ByV"
       )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+      
 
     e.target.reset();
   };
@@ -47,9 +37,9 @@ export const Contact = () => {
       <motion.h2 variants={rightAnimate}>Contact Me</motion.h2>
 
       <motion.form variants={upAnimate} ref={form} onSubmit={sendEmail}>
-        <input type="text" name="name" placeholder="Who are you?" required />
-        <input type="email" name="email" placeholder="Email" required />
-        <textarea
+        <input className="p-2" type="text" name="name" placeholder="Who are you?" required />
+        <input className="p-2" type="email" name="email" placeholder="Email" required />
+        <textarea className="p-2"
           name="message"
           rows="7"
           placeholder="Say Hi :}"
