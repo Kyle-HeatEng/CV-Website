@@ -1,5 +1,5 @@
 {
-  "homepage": "https://kdeveloper321.co.uk",
+  "homepage": "https://kyle-heateng.github.io/CV-Website/",
   "name": "react-cv",
   "version": "0.1.0",
   "private": true,
@@ -42,8 +42,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "tailwindcss": "^3.4.3"
   }
 }
