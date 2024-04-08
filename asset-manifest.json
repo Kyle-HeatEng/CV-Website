@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c3cba4a8.css",
+    "main.js": "/static/js/main.94502759.js",
+    "static/media/art__generator.svg": "/static/media/art__generator.b772b0ecdff75957e0c3b2ffaca2e60f.svg",
+    "static/media/My-Art-Your-Art.svg": "/static/media/My-Art-Your-Art.0d9b468f64ec45f7fb9fc359930ef7fb.svg",
+    "static/media/face2.svg": "/static/media/face2.b93b802408649e3fb1bc21f771209c7c.svg",
+    "static/media/face6.svg": "/static/media/face6.fd17909f038ee46923c5089e0343b6da.svg",
+    "static/media/Kyle-Albert-CV.pdf": "/static/media/Kyle-Albert-CV.e18b1cb262e6597d1d17.pdf",
+    "static/media/face12.svg": "/static/media/face12.72a0dea6289244ca20f88310c94b1ab3.svg",
+    "static/media/face7.svg": "/static/media/face7.101c019471083b44112da563dbe346d8.svg",
+    "static/media/face11.svg": "/static/media/face11.7a6aab39f0ca6a4ce8385940c6883eae.svg",
+    "static/media/face10.svg": "/static/media/face10.70107d5cf7859a230048fa46cc43761b.svg",
+    "static/media/face5.svg": "/static/media/face5.de805cf85d12e730e35d90cb8c6b4a82.svg",
+    "static/media/face15.svg": "/static/media/face15.f2dffca39bf867d22bbf30d8b1a69db0.svg",
+    "static/media/face13.svg": "/static/media/face13.7885d058fbb91c45c9490ff9181d6aab.svg",
+    "static/media/face9.svg": "/static/media/face9.7b73ca21b997f7723dd0817b3f5a584b.svg",
+    "static/media/face0.svg": "/static/media/face0.f352e30a0698c8a50fbca20745f2bee7.svg",
+    "static/media/face8.svg": "/static/media/face8.62524718a4db5e3a888bb8a682c06582.svg",
+    "static/media/face3.svg": "/static/media/face3.9bcf08ab373e7039afd524c84ac1f05b.svg",
+    "static/media/face4.svg": "/static/media/face4.8520cb9860df821c2e08b484104288b6.svg",
+    "static/media/Ani-.mp4": "/static/media/Ani-.9b60db686c0303d6bcf8.mp4",
+    "static/media/wordle-Clone.svg": "/static/media/wordle-Clone.13600f2aea73ae33bef3e1cca2b9964c.svg",
+    "static/media/face1.svg": "/static/media/face1.25a696826f3586e0427c2b449fbc61aa.svg",
+    "static/media/Kanboard.svg": "/static/media/Kanboard.f778b25d0841057788e226c5f89359a5.svg",
+    "static/media/face14.svg": "/static/media/face14.aca2a6a632033cbca531866f214e5ecf.svg",
+    "static/media/Tic-Tac-Toe.svg": "/static/media/Tic-Tac-Toe.be1df30489023da6ae5366726a8457c3.svg",
+    "static/media/bright-squares.png": "/static/media/bright-squares.79000482fe8acfa2e99c.png",
+    "static/media/EtchaASketch.svg": "/static/media/EtchaASketch.6ad475b63be2398890056393f35bc8b9.svg",
+    "index.html": "/index.html",
+    "main.c3cba4a8.css.map": "/static/css/main.c3cba4a8.css.map",
+    "main.94502759.js.map": "/static/js/main.94502759.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3cba4a8.css",
+    "static/js/main.94502759.js"
+  ]
+}
